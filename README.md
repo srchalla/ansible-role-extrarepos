@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/while-true-do/ansible-role-extrarepos.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-extrarepos)
 
 # Ansible Role: extrarepos
-| Enables some extra Repositories.
+| A role to enable some extra repositories.
 
 ## Installation
 

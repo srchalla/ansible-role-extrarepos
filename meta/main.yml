@@ -3,7 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: daniel@while-true-do.org
-  description: Enables some extra Repositories.
+  description: A role to enable some extra repositories.
 
   issue_tracker_url: https://github.com/while-true-do/ansible-role-extrarepos/issues
   github_branch: master
