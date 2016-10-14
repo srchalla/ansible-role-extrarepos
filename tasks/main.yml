@@ -1,0 +1,23 @@
+---
+- name: Enable EPEL-Repo for Redhat and CentOS
+  package:
+    name: epel-release
+    state: present
+  tags:
+    - common
+    - epel
+    - repository
+  when: (ansible_os_family == 'RedHat' and ansible_distribution_major_version == '7' and ansible_distribution != 'Fedora')
+
+- name: Enable RPM Fusion
+  package:
+    name: "{{ item }}"
+    state: present
+  tags:
+    - common
+    - rpmfusion
+    - repository
+  with_items:
+    - http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    - http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  when: (ansible_os_family == 'RedHat' and ansible_distribution == 'Fedora')
