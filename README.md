@@ -5,7 +5,7 @@
 
 ## Installation
 
-Galaxy Link: <https://galaxy.ansible.com/while-true-do.extrarepos>
+Galaxy Link: <https://galaxy.ansible.com/while-true-do/extrarepos>
 
 ```
 ansible-galaxy install while-true-do.extrarepos
